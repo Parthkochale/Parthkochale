@@ -250,11 +250,13 @@
 <!-- CHESS-PUZZLE:START -->
 <div align="center">
 
-[![Chess Puzzle](https://lichess1.org/export/fen.gif?fen=r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R&color=white&lastMove=f1c4&variant=standard&theme=brown&piece=cburnett)](https://lichess.org/training)
+[![Daily Chess Puzzle](https://lichess.org/images/puzzle_placeholder.png)](https://lichess.org/training/cYdei)
 
-**White to move — Find the best continuation.**
+**White to move · Rating: 2055 · Played 31,476× times**
 
-[🔗 Solve on Lichess](https://lichess.org/training) &nbsp;|&nbsp; [♟️ Play Chess](https://lichess.org)
+Themes: `Verylong, Middlegame, Discoveredcheck, Sacrifice`
+
+[🔗 Solve Today's Puzzle on Lichess →](https://lichess.org/training/cYdei)&nbsp;&nbsp;|&nbsp;&nbsp;[♟️ Play Chess](https://lichess.org)
 
 </div>
 <!-- CHESS-PUZZLE:END -->
