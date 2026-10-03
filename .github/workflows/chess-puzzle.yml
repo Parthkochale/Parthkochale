@@ -1,0 +1,96 @@
+name: ♟️ Daily Chess Puzzle Update
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-chess-puzzle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch puzzle and update README
+        run: |
+          python3 << 'PYEOF'
+          import requests, re, sys
+
+          try:
+              resp = requests.get(
+                  "https://lichess.org/api/puzzle/daily",
+                  headers={"Accept": "application/json"},
+                  timeout=15
+              )
+              resp.raise_for_status()
+              data = resp.json()
+          except Exception as e:
+              print(f"API error: {e}"); sys.exit(0)
+
+          puzzle    = data.get("puzzle", {})
+          game      = data.get("game", {})
+          puzzle_id = puzzle.get("id", "")
+          fen       = game.get("fen", "")
+          rating    = puzzle.get("rating", "?")
+          plays     = puzzle.get("plays", "?")
+
+          side_char = fen.split(" ")[1] if " " in fen else "w"
+          side      = "White" if side_char == "w" else "Black"
+          themes    = ", ".join(puzzle.get("themes", [])[:4]).replace("_", " ").title()
+
+          board_url = (
+              f"https://lichess1.org/export/fen.gif"
+              f"?fen={fen.replace(' ', '%20')}"
+              f"&color={'white' if side=='White' else 'black'}"
+              f"&theme=brown&piece=cburnett"
+          ) if fen else "https://lichess.org/images/puzzle_placeholder.png"
+
+          puzzle_url = f"https://lichess.org/training/{puzzle_id}" if puzzle_id else "https://lichess.org/training"
+
+          block = f"""<div align="center">
+
+[![Daily Chess Puzzle]({board_url})]({puzzle_url})
+
+**{side} to move · Rating: {rating} · Played {plays:,}× times**
+
+Themes: `{themes if themes else "tactics"}`
+
+[🔗 Solve Today's Puzzle on Lichess →]({puzzle_url})&nbsp;&nbsp;|&nbsp;&nbsp;[♟️ Play Chess](https://lichess.org)
+
+</div>"""
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              content = f.read()
+
+          pattern = r"<!-- CHESS-PUZZLE:START -->.*?<!-- CHESS-PUZZLE:END -->"
+          replacement = f"<!-- CHESS-PUZZLE:START -->\n{block}\n<!-- CHESS-PUZZLE:END -->"
+
+          if re.search(pattern, content, re.DOTALL):
+              new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+              with open("README.md", "w", encoding="utf-8") as f:
+                  f.write(new_content)
+              print(f"✅ Puzzle updated: {puzzle_id} | Rating: {rating} | {side} to move")
+          else:
+              print("❌ Markers not found in README.md")
+              sys.exit(1)
+          PYEOF
+
+      - name: Commit and push update
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "♟️ Daily chess puzzle updated [$(date +'%Y-%m-%d')]"
+          git push
