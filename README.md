@@ -252,7 +252,7 @@
 
 [![Daily Chess Puzzle](https://lichess.org/images/puzzle_placeholder.png)](https://lichess.org/training/cYdei)
 
-**White to move · Rating: 2055 · Played 31,476× times**
+**White to move · Rating: 2071 · Played 59,695× times**
 
 Themes: `Verylong, Middlegame, Discoveredcheck, Sacrifice`
 
