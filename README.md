@@ -250,18 +250,13 @@
 <!-- CHESS-PUZZLE:START -->
 <div align="center">
 
-### ♟️ Today's Puzzle — White to Move
+[![Daily Chess Puzzle](https://raw.githubusercontent.com/Parthkochale/Parthkochale/main/assets/chess-puzzle.svg)](https://lichess.org/training/ukijz)
 
-| | |
-|:---:|:---|
-| **Rating** | 1914 |
-| **Played** | 50,168× |
-| **Themes** | Short, Sacrifice, Pillsburysmate, Endgame |
-| **Side** | White to move |
+**White to move · Rating: 1857 · Played 50,695× times**
 
-[![Open Puzzle on Lichess](https://lichess.org/export/fen.gif?fen=&color=white&theme=brown&piece=cburnett)](https://lichess.org/training/ukijz)
+Themes: `Short, Sacrifice, Pillsburysmate`
 
-**[🔗 Click the board or here to solve on Lichess →](https://lichess.org/training/ukijz)**
+[🔗 Solve Today's Puzzle on Lichess →](https://lichess.org/training/ukijz)&nbsp;&nbsp;|&nbsp;&nbsp;[♟️ Play Chess](https://lichess.org)
 
 </div>
 <!-- CHESS-PUZZLE:END -->
