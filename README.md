@@ -250,9 +250,18 @@
 <!-- CHESS-PUZZLE:START -->
 <div align="center">
 
-[![Daily Chess Puzzle](https://lichess1.org/export/fen.gif?fen=r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R%20w%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=f1c4)](https://lichess.org/training)
+### ♟️ Today's Puzzle — White to Move
 
-**White to move · Daily Puzzle · [Solve on Lichess →](https://lichess.org/training)**
+| | |
+|:---:|:---|
+| **Rating** | 1914 |
+| **Played** | 50,168× |
+| **Themes** | Short, Sacrifice, Pillsburysmate, Endgame |
+| **Side** | White to move |
+
+[![Open Puzzle on Lichess](https://lichess.org/export/fen.gif?fen=&color=white&theme=brown&piece=cburnett)](https://lichess.org/training/ukijz)
+
+**[🔗 Click the board or here to solve on Lichess →](https://lichess.org/training/ukijz)**
 
 </div>
 <!-- CHESS-PUZZLE:END -->
