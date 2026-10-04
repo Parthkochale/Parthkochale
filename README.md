@@ -16,8 +16,7 @@
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=Parthkochale&label=Profile+Views&color=36BCF7&style=for-the-badge)
-&nbsp;
+
 ![GitHub followers](https://img.shields.io/github/followers/Parthkochale?label=Followers&style=for-the-badge&color=6C63FF&labelColor=0d1117)
 &nbsp;
 ![GitHub stars](https://img.shields.io/github/stars/Parthkochale?label=Stars&style=for-the-badge&color=36BCF7&labelColor=0d1117)
