@@ -252,11 +252,11 @@
 
 [![Daily Chess Puzzle](https://raw.githubusercontent.com/Parthkochale/Parthkochale/main/assets/chess-puzzle.svg)](https://lichess.org/training/ukijz)
 
-**White to move · Rating: 1857 · Played 50,695× times**
+**White to move · Rating: 1851 · Played 51,115× times**
 
 Themes: `Short, Sacrifice, Pillsburysmate`
 
-[🔗 Solve Today's Puzzle on Lichess →](https://lichess.org/training/ukijz)&nbsp;&nbsp;|&nbsp;&nbsp;[♟️ Play Chess](https://lichess.org)
+[🔗 Solve on Lichess →](https://lichess.org/training/ukijz)
 
 </div>
 <!-- CHESS-PUZZLE:END -->
