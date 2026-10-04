@@ -242,24 +242,7 @@
 
 ---
 
-## `♟️  Daily Chess Puzzle`
 
-> **Can you find the best move?**
-> *Puzzle refreshes every 24 hours via Lichess API · [View on Lichess →](https://lichess.org/training)*
-
-<!-- CHESS-PUZZLE:START -->
-<div align="center">
-
-[![Daily Chess Puzzle](https://raw.githubusercontent.com/Parthkochale/Parthkochale/main/assets/chess-puzzle.svg)](https://lichess.org/training/ukijz)
-
-**White to move · Rating: 1851 · Played 51,115× times**
-
-Themes: `Short, Sacrifice, Pillsburysmate`
-
-[🔗 Solve on Lichess →](https://lichess.org/training/ukijz)
-
-</div>
-<!-- CHESS-PUZZLE:END -->
 
 ---
 
